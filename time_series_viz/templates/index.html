@@ -1,0 +1,18 @@
+{% extends base %}
+
+{% block title %}Time Series Visualisation{% endblock %}
+
+{% block postamble %}
+  <style>
+    {% include 'styles.css' %}
+  </style>
+{% endblock %}
+
+{% block contents %}
+<h1>Time Series Visualisation</h1>
+  <div>
+    <p> This app allows you to explore and modify Time Series Data</p>
+    <p> Adjust the sales directly in the graph by moving points vertically. The data is saved automatically. </p>
+  </div>
+  {{ super() }}
+{% endblock %}
